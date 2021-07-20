@@ -1,0 +1,12 @@
+#Copia de seguridad de los /home y la bases de datos todos los dias a las 5 de la maÃ±ana
+0 5 * * * root  rsync -avzrt /home /var/backups/home.bak
+0 5 * * 1 root mysqldump -u admin -p123456 dsportales > /var/backups/dsportalesdb.sql
+
+#Registrar usuarios cada 1 minuto
+*/1 * * * * perl /usr/sbin/simpleDaemon/registrarUsuarios.pl
+
+#Enviar estadisticas cada semana
+0 0 * * 1 /bin/bash /usr/sbin/estadisticas.sh; perl /usr/sbin/estadisticas.pl
+
+#Hacer un checkeo diario con Tripwire
+0 5 * * * tripwire --check > /logsAdmin/informeTripwire.txt 

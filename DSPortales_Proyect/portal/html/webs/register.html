@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DSPortales</title>
+    <link rel="stylesheet" href="register.css">
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h1>Registro</h1>
+        <form action="/cgi-bin/cgiScripts/registro.cgi" method="POST">
+        
+	<label for="username">Usuario</label>
+        <input name="user" type="text" placeholder="4-10 letras, números o _">
+	
+	<label for="password">Contraseña</label>
+        <input name="passwd" type="password" placeholder="Contraseña de 5 a 20 letras y numeros">
+       	
+	<label for="name">Nombre</label>
+        <input name="name" type="text" placeholder="Introduzca tu nombre">
+
+	<label for="surnames">Apellidos</label>
+        <input name="surnames" type="text" placeholder="Introduzca sus apellidos">
+
+	<label for="email">Email</label>
+        <input name="email" type="text" placeholder="Introduzca el email">
+
+	<label for="direction">Direccion</label>
+        <input name="direction" type="text" placeholder="Introduzca su direccion postal">
+	
+	<input type="submit" value="Registrarse">
+      </form>
+    </div>
+  </body>
+
+</html>

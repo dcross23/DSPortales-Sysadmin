@@ -1,0 +1,11 @@
+[Unit]
+Description=ts3 server
+
+[Service]
+Type=forking
+ExecStart=/etc/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh start
+ExecStop=/etc/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh stop
+ExecReload=/etc/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh restart
+
+[Install]
+WantedBy=multi-user.target

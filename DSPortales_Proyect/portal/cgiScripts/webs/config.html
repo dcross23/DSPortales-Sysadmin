@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DSPortales</title>
+    <link rel="stylesheet" href="webs/css/config.css">
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h1>Cambio de datos</h1>
+        <form action="/cgi-bin/cgiScripts/modificar.cgi" method="POST" 
+		 onsubmit="return confirm('¿Estas seguro de que quiere cambiar sus datos?');"> 
+
+	<label for="password">Contraseña</label>
+        <input name="passwd" type="password" placeholder="Introduzca la nueva contraseña (blanco para no cambiar)">
+	
+	<label for="passwdConf">Confirma la contraseña</label>
+        <input name="passwdConf" type="password" placeholder="Introduca de nuevo la contraseña (blanco para no cambiar)">
+       	
+	<label for="name">Nombre</label>
+        <input name="name" type="text" placeholder="Introduzca el nuevo nombre (blanco para no cambiar)">
+
+	<label for="surnames">Apellidos</label>
+        <input name="surnames" type="text" placeholder="Introduzca los nuevos apellidos (blanco para no cambiar)">
+
+	<label for="email">Email</label>
+        <input name="email" type="text" placeholder="Introduzca el nuevo email (blanco para no cambiar)">
+
+	<label for="direction">Direccion</label>
+        <input name="direction" type="text" placeholder="Introduzca su nueva direccion (blanco para no cambiar)">
+	
+	<input type="submit" value="Cambiar configuracion">
+      </form>
+
+      <form action="/cgi-bin/cgiScripts/eliminar.cgi" method="POST"
+	   	onsubmit="return confirm('Se borraran todo sus datos, paginas web... ¿esta seguro?');">
+	      <input type="submit" value="Eliminar cuenta">
+      </form>
+
+    </div>
+  </body>
+
+</html>

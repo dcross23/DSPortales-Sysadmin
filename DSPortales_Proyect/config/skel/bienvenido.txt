@@ -1,0 +1,7 @@
+Bienvenido a DSPortales.
+
+Este es tu area personal. 
+
+Si quiere tener su propio pagina web, simplemente añadala al directorio "public_html",
+y, en caso de tener dicho servicio activa, podra acceder desde https://dsportales/~usuario
+(siendo usuario tu nombre de usuario).

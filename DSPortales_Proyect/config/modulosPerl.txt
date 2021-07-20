@@ -1,0 +1,15 @@
+CGI
+CGI::Session
+File::Slurp
+DBI
+Email::Send::SMTP::Gmail
+Excel::Writer::XLSX
+Sys::Statistics::Linux
+Linux::usermod
+Quota
+File::Path
+File::Copy::Recursive
+Email::Valid
+Filesys::Df
+Crypt::Simple
+File::Finder

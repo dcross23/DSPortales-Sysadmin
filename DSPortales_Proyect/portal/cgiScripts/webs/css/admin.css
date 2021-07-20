@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/fondo.jpeg") no-repeat center top;  
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+
+.card{
+  background: rgba(0,255,0, 0.3);
+  align: center;
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 5% auto 0% auto;
+}
+
+.card a{
+  font-size: 120%;
+  padding: 2.5% 13% 2.5% 13%;
+}
+
+.card a:hover{
+  background-color: yellow;
+  color: black;
+}
+
+.col{
+  margin: 2% 0% 2% 0%;
+  padding: 1% 0% 1% 0%;
+}
+
+#cerrarSes{
+        padding-top: 13%;
+}
+
+#cerrarSes > a{
+        padding: 10% 5% 10% 5%;
+        font-weight:bold;
+        font-size: 170%;
+}
+
+#cerrarSes > a:hover{
+        background-color: #FFB900;
+        color: black;
+        border-color: #FFB900;
+}
+
